@@ -51,18 +51,18 @@ cd compiler-design-basics
 Compile from the Command Prompt using MinGW-w64:
 
 ```bash
-g++ -std=c++17 -static -mwindows -o calculator.exe simple_compiler_win32.cpp -lgdi32 -luser32 -lkernel32
+g++ -std=c++17 -static -mwindows -o Arithmetic_Expression_Evaluator.exe simple_compiler_win32.cpp -lgdi32 -luser32 -lkernel32
 ```
 
 Or, in a Visual Studio x64 Native Tools prompt:
 
 ```bat
-cl.exe /EHsc /std:c++17 /Fe:calculator.exe simple_compiler_win32.cpp gdi32.lib user32.lib kernel32.lib
+cl.exe /EHsc /std:c++17 /Fe:Arithmetic_Expression_Evaluator.exe simple_compiler_win32.cpp gdi32.lib user32.lib kernel32.lib
 ```
 
 ## Usage
 
-1. Run `calculator.exe`.
+1. Run `Arithmetic_Expression_Evaluator.exe`.
 2. Enter any valid arithmetic expression (e.g., `-(3.5+2)*4/2`) into the input box.
 3. Click **Evaluate**.
 4. See the result displayed below, or an error dialog if the expression is invalid.
